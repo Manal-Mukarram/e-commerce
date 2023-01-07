@@ -8,8 +8,10 @@
     display: flex;
 }
 
-.logo {
-    height: 20px;
-    width: 40px;
+.search{
+    display: flex;
+    height: 2rem;
 }
-
+.searchIcon{
+    filter: invert(100%) !important;
+}
