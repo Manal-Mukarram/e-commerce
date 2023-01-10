@@ -4,12 +4,18 @@
     box-sizing: border-box;
 }
 
+body{
+        background-image: url(icons/boho-bg.jpg);
+        background-size: cover;
+}
+
 .header{
     display: flex;
     border: 2px solid red;
-    padding: 1rem;
+    padding: 0.5rem;
     justify-content: space-between;
     align-items: center;
+    /* background-color: white; */
 }
 
 .logo{
@@ -25,6 +31,7 @@
 .search-icon{ 
     height: 100%;
     width: 100%;
+    background-color: rgb(247, 219, 169);
 }
 
 .searchInput{
@@ -37,11 +44,19 @@
     align-items: center;
     justify-content: space-between;
     width: 10rem;
+    color: rgb(145, 39, 39);
+}
+
+.hover:hover{
+    cursor: pointer;
+    /* color: rgb(244, 244, 244); */
+    /* background-color: rgb(145, 39, 39); */
+    text-shadow: 0 0 3px #FF0000;
 }
 
 .dpIcon{
     border: 1px solid black;
-    background-color: rgb(35, 34, 34);
+    background-color: rgb(255, 255, 255);
     height: 2rem;
     width: 2rem;
 }
