@@ -10,15 +10,14 @@
 
 .logo{
     height: 20px !important;
-    width: 20px !important;
+    width: 30px !important;
 }
 
 .search{
     display: flex;
-    height: 2rem;
+    height: 1rem;
 }
-.searchIcon{
-    filter: invert(100%);
-    height: 100px;
-    width: 100px
+.search-icon{ 
+    height: 100%;
+    width: 100%;
 }
