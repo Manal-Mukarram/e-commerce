@@ -15,17 +15,25 @@ body{
     padding: 0.5rem;
     justify-content: space-between;
     align-items: center;
-    /* background-color: white; */
+
+}
+
+.left_header{
+    display: flex; 
+    width: 50rem;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .logo{
-    height: 20px !important;
-    width: 30px !important;
+    height: 2rem !important;
+    width: 3rem !important; 
+    
 }
-
 .search{
     display: flex;
-    height: 1.5rem;
+    height: 2rem;
+    width: 40rem;
 }
 
 .search-icon{ 
@@ -36,7 +44,9 @@ body{
 
 .searchInput{
     padding: 10px;
-    padding-right: 100px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
 }
 
 .headerBtns{
@@ -52,6 +62,10 @@ body{
     /* color: rgb(244, 244, 244); */
     /* background-color: rgb(145, 39, 39); */
     text-shadow: 0 0 3px #FF0000;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px;
 }
 
 .dpIcon{
