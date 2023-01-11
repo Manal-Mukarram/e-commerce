@@ -40,6 +40,8 @@ body{
     height: 100%;
     width: 100%;
     background-color: rgb(247, 219, 169);
+    border-radius: 8px;
+    border-width: 0px;
 }
 
 .searchInput{
