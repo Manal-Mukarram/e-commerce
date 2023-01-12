@@ -36,20 +36,32 @@ body{
     width: 40rem;
 }
 
+.search button{
+    border: 2px solid rgb(142, 115, 81);
+    background-color: rgba(247, 219, 169, 0.2);
+    border-radius: 8px;
+    border-left-width: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
 .search-icon{ 
     height: 100%;
-    width: 100%;
-    background-color: rgb(247, 219, 169);
-    border-radius: 8px;
-    border-width: 0px;
 }
 
 .searchInput{
     padding: 10px;
+    border: 2px solid rgb(142, 115, 81);
     border-radius: 8px;
+    border-right-width: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
     background-color: rgba(255, 255, 255, 0.1);
     width: 100%;
+    outline: none;
 }
+
+
 
 .headerBtns{
     display: flex;
@@ -59,15 +71,8 @@ body{
     color: rgb(145, 39, 39);
 }
 
-.hover:hover{
+a, button{
     cursor: pointer;
-    /* color: rgb(244, 244, 244); */
-    /* background-color: rgb(145, 39, 39); */
-    text-shadow: 0 0 3px #FF0000;
-    border: 2px solid white;
-    border-radius: 5px;
-    background-color: white;
-    padding: 5px;
 }
 
 .dpIcon{
