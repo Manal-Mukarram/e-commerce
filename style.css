@@ -114,9 +114,11 @@ button {
 .dropdown_content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: #f4511e;
+  border: 2px solid #f4511e;
+  /* background-color: #f9f9f9; */
+  min-width: 9rem;
+  /* box-shadow: 0px 8px 16px 0px rgba(205, 97, 55, 0.2); */
   z-index: 1;
   right: 0;
 }
@@ -128,6 +130,10 @@ button {
   text-decoration: none;
   display: block;
   text-align: left;
+}
+
+.dropdown_content a:hover {
+  background-color: #ddd;
 }
 
 .dropdown:hover .dropdown_content {
