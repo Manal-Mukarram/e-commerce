@@ -15,6 +15,7 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 0.5px solid tan;
+  background-color: rgb(244, 81, 30, 0.3);
 }
 
 .left_header {
@@ -66,6 +67,23 @@ body {
   justify-content: space-between;
   width: 13rem;
   color: rgb(145, 39, 39);
+}
+
+.inup {
+  text-decoration: none;
+  padding: 0.3em;
+  transition: all 0.3s linear;
+  color: red;
+  border-radius: 6px;
+}
+
+.inup:hover {
+  background-color: #f4511e;
+  border-radius: 7px;
+  border: none;
+  color: white;
+  text-align: center;
+  opacity: 0.6;
 }
 
 .profileSpan {
@@ -153,4 +171,19 @@ button {
   background-color: rgb(255, 255, 255);
   height: 2rem;
   width: 2rem;
+}
+
+.navbar {
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f4511e;
+}
+
+.nav_items {
+  text-decoration: none;
+  background-color: #f4511e;
+  color: #ffffff;
 }
