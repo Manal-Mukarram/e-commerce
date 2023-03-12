@@ -12,13 +12,13 @@ body{
       .container {
         border: 2px solid rgb(255, 255, 255);
         padding: 20px;
-        margin-left: 15rem;
-        margin-right: 15rem;
+        /* margin-left: 15rem; */
+        /* margin-right: 15rem; */
         background-image: url(icons/logsign.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         flex-direction: column;
       }
@@ -67,6 +67,17 @@ body{
 
       .remember_me {
         margin-top: 1rem;
+      }
+
+      @media screen and (max-width: 877px) {
+        .container {
+          width: 100%;
+          margin: 0;
+        }
+        .heading{
+          /* padding: 2px; */
+          font-size: 1rem;
+        }
       }
     </style>
   </head>
@@ -133,7 +144,7 @@ body{
           Remember me
         </label>
         </div>
-        <p style="padding-left: 2.8rem;">
+        <p  class = "bycreating"; style="padding-left: 2.8rem;">
           By creating an account you agree to our
           <a href="#" style="color: rgb(28, 66, 104);">Terms & Privacy</a>.
         </p>
