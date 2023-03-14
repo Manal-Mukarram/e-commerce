@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-<style>
-    body{
-        background-image: linear-gradient(to top, rgb(220, 84, 30), rgb(255, 154, 118));
-    }
-    .container{
+    <style>
+      body {
+        background-image: linear-gradient(
+          to top,
+          rgb(220, 84, 30),
+          rgb(255, 154, 118)
+        );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      .container {
         border: 2px solid rgb(255, 255, 255);
-        padding: 8rem;
-        margin-left: 15rem;
-        margin-right: 15rem;
+        /* padding: 8rem; */
+        /* margin-left: 15rem; */
+        /* margin-right: 15rem; */
         /* margin-top: 1rem; */
         background-image: url(icons/logsign.jpg);
         background-size: cover;
@@ -21,15 +29,16 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-    }
-    .heading {
+        width: 100%;
+      }
+      .heading {
         border: 1px solid rgb(255, 255, 255);
         color: rgb(255, 255, 255);
         padding: 5px;
         background-color: rgb(244, 81, 30, 0.3);
         border-radius: 0.5rem;
       }
-      .login_input{
+      .login_input {
         padding: 0.5rem;
         /* background-color: ; */
         border: 1px solid #f4511e;
@@ -55,40 +64,44 @@
         background-color: rgb(220, 84, 30);
         color: rgb(167, 163, 163);
       }
-</style>
-</head>
-<body>
+    </style>
+  </head>
+  <body>
     <form action="">
-        <div class="container">
-            <h1 class="heading">Login</h1>
-            <p>Welcome Back.</p>
+      <div class="container">
+        <h1 class="heading">Login</h1>
+        <p>Welcome Back.</p>
 
-            <div class="login">
-                <label for="email">Email:</label>
-            <br />
-                <input
-                type="text"
-                placeholder="Enter Email"
-                name="email"
-                class="login_input"
-                />
-            </div>
-
-            <div class="login">
-                <label for="password">Password:</label>
-            <br />
-                <input
-                type="password"
-                placeholder="Enter Password"
-                name="password"
-                class="login_input"
-                />
-            </div>
-            <button class="btns">Login</button>
-            <div>
-                <p>New user? <a href="signup.html" style="color: rgb(28, 66, 104);">Signup</a> now!</p>
-            </div>
+        <div class="login">
+          <label for="email">Email:</label>
+          <br />
+          <input
+            type="text"
+            placeholder="Enter Email"
+            name="email"
+            class="login_input"
+          />
         </div>
+
+        <div class="login">
+          <label for="password">Password:</label>
+          <br />
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="password"
+            class="login_input"
+          />
+        </div>
+        <button class="btns">Login</button>
+        <div>
+          <p>
+            New user?
+            <a href="signup.html" style="color: rgb(28, 66, 104)">Signup</a>
+            now!
+          </p>
+        </div>
+      </div>
     </form>
-</body>
+  </body>
 </html>

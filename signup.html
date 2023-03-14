@@ -7,20 +7,27 @@
     <title>Signup</title>
     <style>
 body{
-       background-image: linear-gradient(to bottom, rgb(220, 84, 30), rgb(255, 154, 118));
+       background-image: url(icons/signup2_bg.avif);
+       background-size: cover;
+       display: flex;
+       justify-content: center;
 }
       .container {
         border: 2px solid rgb(255, 255, 255);
         padding: 20px;
-        /* margin-left: 15rem; */
-        /* margin-right: 15rem; */
-        background-image: url(icons/logsign.jpg);
+        background-color: rgb(158, 102, 80);
+        border-radius: 1rem;
+        /* background-image: url(icons/logsign.jpg); */
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
+        width: 100%;
+      }
+      label, p{
+        color: white;
       }
       .signup_input {
         padding: 0.5rem;
@@ -32,7 +39,7 @@ body{
       }
 
       .btns {
-        background-color: rgb(244, 81, 30, 0.7);
+        background-color: rgb(110, 71, 56);
         padding: 0.5rem;
         border-radius: 0.5rem;
         border: 1px solid white;
@@ -45,23 +52,19 @@ body{
         border: 1px solid rgb(255, 255, 255);
         color: rgb(255, 255, 255);
         padding: 5px;
-        background-color: rgb(244, 81, 30, 0.3);
+        background-color: rgba(149, 114, 101, 0.5);
         border-radius: 0.5rem;
       }
 
       .btns:hover {
         cursor: pointer;
-        background-color: rgb(220, 84, 30);
-        color: rgb(167, 163, 163);
-      }
-
-      label {
-        padding-left: 0.5rem;
+        background-color: rgb(156, 115, 99);
+        color: rgb(255, 255, 255);
       }
 
       .existing_user {
         padding-top: 10px;
-        color: rgb(28, 66, 104);
+        color: rgb(50, 127, 203);
         /* text-decoration: none; */
       }
 
@@ -146,7 +149,7 @@ body{
         </div>
         <p  class = "bycreating"; style="padding-left: 2.8rem;">
           By creating an account you agree to our
-          <a href="#" style="color: rgb(28, 66, 104);">Terms & Privacy</a>.
+          <a href="#" style="color: rgb(58, 129, 199);">Terms & Privacy</a>.
         </p>
         <div class="">
           <button type="submit" class="btns">Sign Up</button>
