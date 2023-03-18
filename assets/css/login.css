@@ -24,7 +24,7 @@ body {
     padding: 4px 8px;
     background-color: rgba(117, 80, 67, 0.5);
     border-radius: 0.5rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     margin-bottom: 0.5rem;
   }
   .login_input {
@@ -52,4 +52,25 @@ body {
     cursor: pointer;
     background-color: rgb(156, 115, 99);
     color: rgb(255, 255, 255);
+  }
+
+  @media screen and (max-width: 401px){
+    .container{
+      width:100%;
+      margin: 0;
+      border-radius: 0;
+    }
+  }
+  @media screen and (max-width: 370px){
+    .login_input{
+      width: 13rem;
+    }
+    .btns{
+      width: 13rem;
+    }
+    .container{
+      width:100%;
+      margin: 0;
+      border-radius: 0;
+    }
   }
