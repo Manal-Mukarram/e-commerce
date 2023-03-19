@@ -1,7 +1,7 @@
-body {
-  background-image: url(icons/boho-bg.jpg);
+/* body {
+  background-image: url(assets/images/boho-bg.jpg);
   background-size: cover;
-}
+} */
 
 .header {
   display: flex;
