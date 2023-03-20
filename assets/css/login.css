@@ -1,5 +1,5 @@
 body {
-    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: var(--fontMedium);
     background-size: cover;
     display: flex;
     justify-content: center;

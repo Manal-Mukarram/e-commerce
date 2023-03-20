@@ -1,7 +1,6 @@
-/* body {
-  background-image: url(assets/images/boho-bg.jpg);
-  background-size: cover;
-} */
+body {
+  font-family: var(--fontMedium);
+}
 
 .header {
   display: flex;
@@ -173,11 +172,11 @@ button {
   justify-content: space-evenly;
   align-items: center;
   padding: 1rem;
-  background-color: #f4511e;
+  background-color: var(--brown);
 }
 
 .nav_items {
   text-decoration: none;
-  background-color: #f4511e;
+  background-color: var(--brown);
   color: #ffffff;
 }
