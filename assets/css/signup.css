@@ -1,6 +1,5 @@
 body {
     font-family: var(--fontMedium);
-    /* background-image: url(assets/Images/signup2_bg.png); */
     background-size: cover;
     height: 99vh;
     display: flex;
@@ -9,16 +8,14 @@ body {
   }
   .container {
     border: 2px solid rgb(117, 80, 67);
-    padding: 20px;
+    padding: 30px 20px;
     background-color: rgba(158, 102, 80, 0.828);
     border-radius: 1rem;
-    /* background-image: url(icons/logsign.jpg); */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 25rem;
-    height: 99vh;
   }
   label,
   p {

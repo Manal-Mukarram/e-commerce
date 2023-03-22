@@ -2,6 +2,8 @@ body {
   font-family: var(--fontMedium);
 }
 
+/* ---- HEADER START  ---- */
+
 .header {
   display: flex;
   padding: 0.5rem;
@@ -84,19 +86,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid red; */
   background-color: rgba(255, 255, 255, 0.434);
   margin: 2px;
   border-radius: 50%;
 }
 
-/* .profileSpan img {
-  margin: 5px
-} */
-
 a {
   cursor: pointer;
-  /* transition: all 0.5s linear; */
 }
 
 .hov {
@@ -118,10 +114,6 @@ a {
   display: flex;
   align-items: center;
 }
-
-/* .dropdown{
-  background-color: rgba(255, 255, 255, 0.366);
-} */
 
 .dropdown_img:hover {
   background-color: #ffffff;
@@ -165,14 +157,15 @@ a {
 }
 
 .dpIcon {
-  /* border: 1px solid black; */
-  
   height: 3rem;
   width: 3rem;
 }
 
+/* ---- HEADER END  ---- */
+
+/* ---- NAVBAR START  ---- */
+
 .navbar {
-  /* border: 2px solid red; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -186,20 +179,13 @@ a {
   color: #ffffff;
 }
 
-.categories_img {
-  height: 1rem;
-  filter: invert(100%);
-}
-
 .categories_list {
   display: none;
   flex-direction: column;
   position: absolute;
   background-color: rgb(228, 183, 173);
   z-index: 1;
-  right: 0;
-  margin: 5px 8px 0px 0px;
-  transition: all 0.5s linear;
+  margin-top: 15px;
 }
 
 .categories_list a {
@@ -210,9 +196,21 @@ a {
 }
 
 .categories_list a:hover {
-  background-color: #ddd;
+  background-color: rgb(132, 42, 42);
+  color: white;
 }
 
 .categories:hover .categories_list {
   display: flex;
 }
+
+.clothing{
+  display: flex;
+}
+
+.clothing_list{
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---- NAVBAR END  ---- */
