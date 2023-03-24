@@ -49,7 +49,7 @@ body {
     border-radius: 0.5rem;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
   .form{
     padding-top: 1rem;
@@ -73,7 +73,9 @@ body {
   }
 
   .bycreating {
-    margin: 0.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: small;
   }
 
   @media screen and (max-width: 488px){
