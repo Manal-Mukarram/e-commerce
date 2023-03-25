@@ -244,3 +244,18 @@ nav ul li:hover > .submenu {
 }
 
 /* ---- NAVBAR END  ---- */
+
+
+/* ---- 1st PAGE START  ---- */
+
+.sales_banner {
+  width: 99vh;
+  height: 77vh;
+}
+
+.page1 {
+  padding: 1rem;
+}
+
+/* ---- 1st PAGE END  ---- */
+
