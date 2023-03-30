@@ -249,12 +249,20 @@ nav ul li:hover > .submenu {
 /* ---- 1st PAGE START  ---- */
 
 .sales_banner {
-  width: 99vh;
-  height: 77vh;
+  width: 70vh;
+  height: 90vh;
+  padding: 3rem;
+  background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgb(249, 176, 190) 100%);
+}
+
+.model {
+  height: 90vh;
 }
 
 .page1 {
-  padding: 1rem;
+  padding: 1.5rem;
+  margin: 1rem;
+  /* border: 2px solid black; */
 }
 
 /* ---- 1st PAGE END  ---- */
