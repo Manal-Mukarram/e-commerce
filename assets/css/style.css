@@ -3,4 +3,13 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  /* CSS Variables */
+  :root{
+    --brown: rgb(117, 80, 67);
+    --fontLight : 'Josefin Sans', sans-serif;
+    --fontMedium : 'Josefin Sans', sans-serif;
+  }
+
+
   

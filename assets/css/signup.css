@@ -1,6 +1,5 @@
 body {
-    font-family: 'Edu NSW ACT Foundation', cursive;
-    /* background-image: url(assets/Images/signup2_bg.png); */
+    font-family: var(--fontMedium);
     background-size: cover;
     height: 99vh;
     display: flex;
@@ -9,15 +8,14 @@ body {
   }
   .container {
     border: 2px solid rgb(117, 80, 67);
-    padding: 20px;
+    padding: 30px 20px;
     background-color: rgba(158, 102, 80, 0.828);
     border-radius: 1rem;
-    /* background-image: url(icons/logsign.jpg); */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    width: 25rem;
   }
   label,
   p {
@@ -50,8 +48,8 @@ body {
     background-color: rgba(117, 80, 67, 0.5);
     border-radius: 0.5rem;
     text-align: center;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    margin-bottom: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    margin-bottom: 1rem;
   }
   .form{
     padding-top: 1rem;
@@ -75,7 +73,9 @@ body {
   }
 
   .bycreating {
-    margin: 0.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: small;
   }
 
   @media screen and (max-width: 488px){
