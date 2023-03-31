@@ -144,9 +144,9 @@ a {
   background-color: #ddd;
 }
 
-.dropdown:hover .dropdownList {
+/* .dropdown:hover .dropdownList {
   display: flex;
-}
+} */
 
 .headerBtns button {
   border-width: 0px;
@@ -249,20 +249,20 @@ nav ul li:hover > .submenu {
 /* ---- 1st PAGE START  ---- */
 
 .sales_banner {
-  width: 70vh;
-  height: 90vh;
-  padding: 3rem;
-  background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgb(249, 176, 190) 100%);
+  /* width: 50vh; */
+  height: 60vh;
+  /* padding: 1rem; */
+  
 }
 
 .model {
   height: 90vh;
+  position: relative;
 }
 
 .page1 {
-  padding: 1.5rem;
-  margin: 1rem;
-  /* border: 2px solid black; */
+  background: radial-gradient(circle, rgb(154, 56, 49) 0%, rgb(255, 184, 156) 100%);
+  margin-left: 3rem;
 }
 
 /* ---- 1st PAGE END  ---- */

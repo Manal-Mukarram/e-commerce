@@ -21,6 +21,8 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
       rel="stylesheet"
     />
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- INTERNAL STYLE -->
     <style>
       body {
@@ -48,24 +50,26 @@
         <a href="signup.html" class="inup" class="hov">Signup</a>
         <span class="profileSpan">
           <img
-            src="assets/images/profilenew.png"
-            alt="profile"
-            class="dpIcon"
+          src="assets/images/profilenew.png"
+          alt="profile"
+          class="dpIcon"
           />
           <div class="dropdown">
-            <button class="dropdown">
-              <img
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+              <!-- <img
                 src="assets/images/dropdown.png"
                 alt=""
                 class="dropdown_img"
-              />
-              <div class="dropdownList">
-                <a href="">profile</a>
-                <a href="">edit profile</a>
-                <a href="">settings</a>
-                <a href="">logout</a>
-              </div>
+              /> -->
             </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <div class="dropdown">
+                <li><button class="dropdown-item " href="">profile</button></li>
+                <li><button class="dropdown-item" href="">edit profile</button></li>
+                <li><button class="dropdown-item" href="">settings</button></li>
+                <li><button class="dropdown-item" href="">logout</button></li>
+              </div>
+            </ul>
           </div>
         </span>
       </div>
@@ -106,10 +110,13 @@
 
     <!-- ----  1st PAGE START  ---- -->
     
-  <div class="page1">
-    <img src="assets/images/offer.png" alt="" class="sales_banner">
-    <img src="assets/images/model4.jpg" alt="" class="model">
+  <div class="page1 row container">
+    <img src="assets/images/offer.png" alt="" class="sales_banner col-sm-12 col-md-6 col-lg-6 col-12 ">
+    <img src="assets/images/model.png" alt="" class="model col-sm-12 col-md-6 col-lg-6 col-12">
   </div>
 
+  <!-- BOOTSTRAP JAVASCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
   </body>
 </html>
