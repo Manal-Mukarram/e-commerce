@@ -102,7 +102,7 @@
 
       <!-- ----  NAVBAR START  ---- -->
 
-      <nav>
+      <nav class="fixed-top">
         <ul>
           <li><a class="nav_item" href="">Home</a></li>
           <li><a class="nav_item" href="">About Us</a></li>
@@ -133,22 +133,155 @@
 
       <!-- ----  1st PAGE START  ---- -->
 
-      <!-- <div class="page1 row">
-      <div class="col-5">
-        <img src="assets/images/offer.png" alt="" class="sales_banner">
-      </div>
-      <button class="btn btn-outline-light w-25 shopnow" type="button">Shop Now</button>
-      <div class="col-5"><img src="assets/images/model.png" alt="" class="model"></div>
-    </div> -->
       <div class="page1 d-flex justify-content-evenly align-items-center">
         <div class="offer">
           <img src="assets/images/offer.png" class="offerImg" alt="" />
         </div>
         <div class="shopnow">
-          <h4 class="" style="font-family: 'Alex Brush', cursive; font-size: 54px;">Enhance your joy—of shopping.</h4>
+          <h4
+            class=""
+            style="font-family: 'Alex Brush', cursive; font-size: 54px"
+          >
+            Enhance your joy—of shopping.
+          </h4>
           <button class="btn btn-outline-light shopnowBtn" type="button">
             Shop Now
           </button>
+        </div>
+      </div>
+    </div>
+    <div class="container carouselContainer w-75">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/images/carousel2.avif"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Electronics</h5>
+              <p>Get upto 75% OFF on your first purchase!!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/carousel4.avif"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block text-dark">
+              <h5>Beauty</h5>
+              <p>A whole new world, a whole new look. Limited Offer!!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/carousel3.avif"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Home Decor</h5>
+              <p>Design your home with passssion..</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="card-group my-5">
+      <div class="card">
+        <div class="card-body">
+          <img src="assets/images/menwear2.jpg" alt="" class="w-100"/>
+          <h5 class="m-1 mt-2">Men's Wear</h5>
+          <p>Shop the largest branded collection for Men from Allen Solly, Levis, Van Heusen, Peter England, Levis, USPA, Puma & more.</p>
+          <a href="#" class="btn btn-dark">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <img src="assets/images/womenwear2.jpeg" alt="" class="w-100"/>
+          <h5 class="m-1 mt-2">Women's Wear</h5>
+          <p>Shop the widest collection for women at the biggest discounts. Choose from a top range of casual ,ethnic and western styles.</p>
+          <a href="#" class="btn btn-dark">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <img src="assets/images/watch.jpg" alt="" class="w-100"/>
+          <h5 class="m-1 mt-2">Watches</h5>
+          <p>Choose from a variety of smartwatches, sports watches, chronograph, analogue and digital watches or shop by material.</p>
+          <a href="#" class="btn btn-dark">Shop Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-group mb-5">
+      <div class="card">
+        <div class="card-body">
+          <img src="assets/images/womenwear2.jpeg" alt="" class="w-100"/>
+          <h5 class="m-1 mt-2">Women's Wear</h5>
+          <p>Shop the widest collection for women at the biggest discounts. Choose from a top range of casual ,ethnic and western styles.</p>
+          <a href="#" class="btn btn-dark">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <img src="assets/images/footwear.jpg" alt="" class="w-100"/>
+          <h5 class="m-1 mt-2">Footwear</h5>
+          <p>Choose from a variety of smartwatches, sports watches, chronograph, analogue and digital watches or shop by material.</p>
+          <a href="#" class="btn btn-dark">Shop Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <img src="assets/images/menwear2.jpg" alt="" class="w-100"/>
+          <h5 class="m-1 mt-2">Men's Wear</h5>
+          <p>Shop the largest branded collection for Men from Allen Solly, Levis, Van Heusen, Peter England, Levis, USPA, Puma & more.</p>
+          <a href="#" class="btn btn-dark">Shop Now</a>
         </div>
       </div>
     </div>

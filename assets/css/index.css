@@ -292,6 +292,16 @@ nav ul li:hover > .submenu {
   margin-right: 3rem;
 }
 
+.carouselContainer {
+  margin-top: 4rem;
+  width: 50%;
+}
+
+.carouselContainer>h5 p {
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+}
+
+
 
 /* ---- 1st PAGE END  ---- */
 
