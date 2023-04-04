@@ -31,8 +31,13 @@
     <link rel="stylesheet" href="assets/lib/bootstrap/style.css"">
     <!-- INTERNAL STYLE -->
     <style>
-      body {
+      .wrapper {
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: -1;
         background-image: url(assets/images/wcbg2.avif);
+        background-repeat: no-repeat;
         background-size: cover;
       }
     </style>
@@ -40,6 +45,8 @@
 
   <body>
     <!-- ----  HEADER START  ---- -->
+
+    <div class="wrapper"></div>
 
     <div class="page1Wrapper" style="height: 100vh">
       <header class="header">
@@ -137,20 +144,20 @@
         <div class="offer">
           <img src="assets/images/offer.png" class="offerImg" alt="" />
         </div>
-        <div class="shopnow">
+        <div class="shopnow d-flex align-items-center">
           <h4
-            class=""
+            class="row"
             style="font-family: 'Alex Brush', cursive; font-size: 54px"
           >
-            Enhance your joy—of shopping.
+            Enhance your joy—<div>of shopping.</div>
           </h4>
-          <button class="btn btn-outline-light shopnowBtn" type="button">
+          <button class="btn btn-outline-light shopnowBtn row d-block" type="button">
             Shop Now
           </button>
         </div>
       </div>
     </div>
-    <div class="container carouselContainer w-75">
+    <div class="container carouselContainer w-75 mt-4">
       <div
         id="carouselExampleCaptions"
         class="carousel slide"
@@ -233,16 +240,89 @@
         </button>
       </div>
     </div>
-    <div class="card-group my-5">
-      <div class="card">
+
+    <div class="row row-cols-1 row-cols-3 g-4 mt-3">
+      <div class="col">
+       <div class="card">
+         <img src="assets/images/menwear4.jpeg" alt="" class="">
+         <div class="card-body">
+           <h5>Men's Denim Shirt</h5>
+           <p>Navy stretch denim urban shirt</p>
+           <a href="#" class="btn btn-dark">Buy Now</a>
+           <a href="#" class="btn btn-outline-dark float-end">Add to Cart</a>
+         </div>
+       </div>
+      </div>
+      <div class="col">
+       <div class="card">
+         <img src="assets/images/womenwear2.jpeg" alt="">
+         <div class="card-body">
+           <h5>Fancy Ladies Blazer</h5>
+           <p>Elegant white checked coat.</p>
+           <a href="#" class="btn btn-dark">Buy Now</a>
+           <a href="#" class="btn btn-outline-dark float-end">Add to Cart</a>
+         </div>
+       </div>
+      </div>
+      <div class="col">
+       <div class="card">
+         <img src="assets/images/boots.jpg" alt="">
+         <div class="card-body">
+           <h5>Women's Boots</h5>
+           <p>Black knee high boots for winter.</p>
+           <a href="#" class="btn btn-dark">Buy Now</a>
+           <a href="#" class="btn btn-outline-dark float-end">Add to Cart</a>
+         </div>
+       </div>
+      </div>
+      <div class="col">
+       <div class="card">
+         <img src="assets/images/headphones.jpg" alt="">
+         <div class="card-body">
+           <h5>Headphones</h5>
+           <p>White wireless over ear headphones.</p>
+           <a href="#" class="btn btn-dark">Buy Now</a>
+           <a href="#" class="btn btn-outline-dark float-end">Add to Cart</a>
+         </div>
+       </div>
+      </div>
+      <div class="col">
+       <div class="card">
+         <img src="assets/images/lighting.jpg" alt="">
+         <div class="card-body">
+           <h5>Wall Lighting</h5>
+           <p>Light in antique gold with clear & amber glass</p>
+           <a href="#" class="btn btn-dark">Buy Now</a>
+           <a href="#" class="btn btn-outline-dark float-end">Add to Cart</a>
+         </div>
+       </div>
+      </div>
+      <div class="col">
+       <div class="card">
+         <img src="assets/images/eyepalette.jpg.crdownload" alt="">
+         <div class="card-body">
+           <h5>Eyeshadow Palette</h5>
+           <p>Nudes of New York dynamic eyeshadow palette.</p>
+           <a href="#" class="btn btn-dark">Buy Now</a>
+           <a href="#" class="btn btn-outline-dark float-end">Add to Cart</a>
+         </div>
+       </div>
+      </div>
+    </div>
+
+    
+    
+    
+    <!-- <div class="row my-3 d-flex justify-content-center mx-0">
+      <div class="card m-1 col-3">
         <div class="card-body">
-          <img src="assets/images/menwear2.jpg" alt="" class="w-100"/>
-          <h5 class="m-1 mt-2">Men's Wear</h5>
-          <p>Shop the largest branded collection for Men from Allen Solly, Levis, Van Heusen, Peter England, Levis, USPA, Puma & more.</p>
-          <a href="#" class="btn btn-dark">Shop Now</a>
+          <img src="assets/images/menwear3.jpg" alt="" class="card-img-top"/>
+          <h5 class="m-1 mt-2">Men's Denim Shirt</h5>
+          <p>Navy Stretch Denim Urban Shirt</p>
+          <a href="#" class="btn btn-dark">Buy Now</a>
         </div>
       </div>
-      <div class="card">
+      <div class="card m-1 col-3">
         <div class="card-body">
           <img src="assets/images/womenwear2.jpeg" alt="" class="w-100"/>
           <h5 class="m-1 mt-2">Women's Wear</h5>
@@ -250,7 +330,7 @@
           <a href="#" class="btn btn-dark">Shop Now</a>
         </div>
       </div>
-      <div class="card">
+      <div class="card m-1 col-3">
         <div class="card-body">
           <img src="assets/images/watch.jpg" alt="" class="w-100"/>
           <h5 class="m-1 mt-2">Watches</h5>
@@ -258,9 +338,7 @@
           <a href="#" class="btn btn-dark">Shop Now</a>
         </div>
       </div>
-    </div>
-    <div class="card-group mb-5">
-      <div class="card">
+      <div class="card m-1 col-3">
         <div class="card-body">
           <img src="assets/images/womenwear2.jpeg" alt="" class="w-100"/>
           <h5 class="m-1 mt-2">Women's Wear</h5>
@@ -268,7 +346,7 @@
           <a href="#" class="btn btn-dark">Shop Now</a>
         </div>
       </div>
-      <div class="card">
+      <div class="card m-1 col-3">
         <div class="card-body">
           <img src="assets/images/footwear.jpg" alt="" class="w-100"/>
           <h5 class="m-1 mt-2">Footwear</h5>
@@ -276,14 +354,14 @@
           <a href="#" class="btn btn-dark">Shop Now</a>
         </div>
       </div>
-      <div class="card">
+      <div class="card m-1 col-3">
         <div class="card-body">
           <img src="assets/images/menwear2.jpg" alt="" class="w-100"/>
           <h5 class="m-1 mt-2">Men's Wear</h5>
           <p>Shop the largest branded collection for Men from Allen Solly, Levis, Van Heusen, Peter England, Levis, USPA, Puma & more.</p>
           <a href="#" class="btn btn-dark">Shop Now</a>
         </div>
-      </div>
+    </div> -->
     </div>
 
     <!-- BOOTSTRAP JAVASCRIPT -->
