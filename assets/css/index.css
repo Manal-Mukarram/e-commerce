@@ -2,6 +2,11 @@ body {
   font-family: var(--fontMedium);
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /* ---- HEADER START  ---- */
 
 .header {
@@ -86,9 +91,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(195, 35, 35);
-  margin: 2px;
-  border-radius: 25%;
+  /* background-color: rgb(195, 35, 35);
+  margin: 2px; */
+  border-radius: 5px;
 }
 
 a {
@@ -149,7 +154,7 @@ a {
 } */
 
 .dropdown{
-  background-color: rgb(186, 161, 154); 
+  background-color: rgb(255, 195, 179); 
 }
 
 .headerBtns button {
@@ -262,16 +267,6 @@ nav ul li:hover > .submenu {
 
 /* ---- 1st PAGE START  ---- */
 
-/* .sales_banner {
-  width: 60vh;
-} */
-
-/* .page1 {
-  background: radial-gradient(circle, rgb(154, 56, 49) 0%, rgb(255, 184, 156) 100%);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-} */
 
 .page1 {
   background: linear-gradient(90deg, rgb(154, 56, 49) 0%, rgb(255, 184, 156) 100%);
@@ -293,6 +288,8 @@ nav ul li:hover > .submenu {
   margin-right: 3rem;
 }
 
+/* .........Carousel......... */
+
 .carouselContainer {
   margin-top: 4rem;
   width: 50%;
@@ -303,6 +300,82 @@ nav ul li:hover > .submenu {
 }
 
 
+.cart:hover {
+  filter: invert(100%);
+}
+
+.carousel .carousel-item {
+  height: 500px;
+}
+
+.carousel-item img {
+  position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+}
+
+/* .........Cards......... */
+
+.cardImg {
+  aspect-ratio: 2/2;
+}
+
+.cardsHeading {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.5rem;
+}
+.cardsHeading:before, .cardsHeading:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+.cardsHeading:before {
+  margin-right: 10px
+}
+.cardsHeading:after {
+  margin-left: 10px
+}
+
 
 /* ---- 1st PAGE END  ---- */
+
+
+/* ---- FOOTER START  ---- */
+
+.footer{
+  background-color: var(--brown);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.footerLogo {
+  width: 3%;
+}
+
+.footerIcons {
+ width: 2rem;
+ aspect-ratio: 1/1;
+ filter: invert(100%);
+}
+
+.footerText {
+  color: white;
+  font-size: small;
+}
+
+.footerPara {
+  color: #d3d3d3;
+}
+
+.footerLeft {
+  position: relative !important;
+  top: 0 !important;
+}
+
+
+/* ---- FOOTER END  ---- */
 

@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="assets/lib/bootstrap/style.css"">
     <!-- INTERNAL STYLE -->
     <style>
-      .wrapper {
+      .wrapperr {
         height: 100vh;
         width: 100vw;
         position: fixed;
@@ -46,9 +46,9 @@
   <body>
     <!-- ----  HEADER START  ---- -->
 
-    <div class="wrapper"></div>
+    <div class="wrapperr"></div>
 
-    <div class="page1Wrapper" style="height: 100vh">
+    <div class="page1Wrapper">
       <header class="header">
         <div class="left_header">
           <img src="assets/images/logo_e-commerce.png" class="logo" />
@@ -66,15 +66,15 @@
         <div class="headerBtns">
           <a href="login.html" class="inup" class="hov">Login</a>
           <a href="signup.html" class="inup" class="hov">Signup</a>
-          <span class="profileSpan bg-light">
+          <span class="profileSpan">
             <img
               src="assets/images/profilenew.png"
               alt="profile"
-              class="dpIcon"
+              class="dpIcon p-0"
             />
             <div>
               <button
-                class="btn btn-light dropdown-toggle"
+                class="btn dropdown-toggle"
                 type="button"
                 id="dropdownMenu2"
                 data-bs-toggle="dropdown"
@@ -86,8 +86,8 @@
                 class="dropdown_img"
               /> -->
               </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <div class="dropdown">
+              <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenu2">
+                <div class="dropdown p-1">
                   <li>
                     <button class="dropdown-item" href="">profile</button>
                   </li>
@@ -111,8 +111,8 @@
 
       <nav>
         <ul>
-          <li><a class="nav_item" href="">Home</a></li>
-          <li><a class="nav_item" href="">About Us</a></li>
+          <li><a class="nav_item" href="index.html">Home</a></li>
+          <li><a class="nav_item" href="">My Orders</a></li>
           <li class="categories">
             <a class="nav_item" href="">Categories</a>
             <ul class="submenu">
@@ -144,20 +144,27 @@
         <div class="offer">
           <img src="assets/images/offer.png" class="offerImg" alt="" />
         </div>
-        <div class="shopnow d-flex align-items-center">
+        <div class="shopnow d-flex flex-column">
           <h4
             class="row"
             style="font-family: 'Alex Brush', cursive; font-size: 54px"
           >
-            Enhance your joy—<div>of shopping.</div>
+            Enhance your joy—
+            <div>of shopping.</div>
           </h4>
-          <button class="btn btn-outline-light shopnowBtn row d-block" type="button">
+          <button
+            class="btn btn-outline-light shopnowBtn w-25 mx-5"
+            type="button"
+          >
             Shop Now
           </button>
         </div>
       </div>
     </div>
-    <div class="container carouselContainer w-75 mt-4">
+
+    <!--   Carousel   -->
+
+    <div class="container-fluid carouselContainer m-0 p-0">
       <div
         id="carouselExampleCaptions"
         class="carousel slide"
@@ -188,7 +195,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="assets/images/carousel2.avif"
+              src="assets/images/carousel2.jpg"
               class="d-block w-100"
               alt="..."
             />
@@ -199,18 +206,18 @@
           </div>
           <div class="carousel-item">
             <img
-              src="assets/images/carousel4.avif"
+              src="assets/images/carousel5.jpg"
               class="d-block w-100"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block text-dark">
+            <div class="carousel-caption d-none d-md-block">
               <h5>Beauty</h5>
               <p>A whole new world, a whole new look. Limited Offer!!</p>
             </div>
           </div>
           <div class="carousel-item">
             <img
-              src="assets/images/carousel3.avif"
+              src="assets/images/carousel3.jpg"
               class="d-block w-100"
               alt="..."
             />
@@ -241,128 +248,228 @@
       </div>
     </div>
 
-    <div class="row row-cols-1 row-cols-3 g-4 mt-3">
-      <div class="col">
-       <div class="card">
-         <img src="assets/images/menwear4.jpeg" alt="" class="">
-         <div class="card-body">
-           <h5>Men's Denim Shirt</h5>
-           <p>Navy stretch denim urban shirt</p>
-           <a href="#" class="btn btn-dark">Buy Now</a>
-           <a href="#" class="btn btn-outline-dark float-end">Add to Cart</a>
-         </div>
-       </div>
+    <!-- ----  CARDS START  ---- -->
+    <!-- Part 1 -->
+    <h4 class="cardsHeading">Deals of the day</h4>
+    <div
+      class="row row-cols-1 row-cols-3 g-4 mt-3 mx-2 d-flex justify-content-center"
+    >
+      <div class="col w-25 col-lg-4 col-md-4 mx-2">
+        <div class="card">
+          <img src="assets/images/menwear4.jpeg" alt="" class="cardImg" />
+          <div class="card-body">
+            <h5>Men's Denim Shirt</h5>
+            <p>Navy stretch denim urban shirt</p>
+            <a href="#" class="btn btn-dark">Buy Now</a>
+            <a href="#" class="btn btn-outline-dark w-25 float-end"
+              ><img src="assets/images/cart.png" class="cart w-50"
+            /></a>
+          </div>
+        </div>
       </div>
-      <div class="col">
-       <div class="card">
-         <img src="assets/images/womenwear2.jpeg" alt="">
-         <div class="card-body">
-           <h5>Fancy Ladies Blazer</h5>
-           <p>Elegant white checked coat.</p>
-           <a href="#" class="btn btn-dark">Buy Now</a>
-           <a href="#" class="btn btn-outline-dark float-end">Add to Cart</a>
-         </div>
-       </div>
+      <div class="col w-25 col-lg-4 col-md-4 mx-2">
+        <div class="card">
+          <img src="assets/images/womenwear2.jpeg" alt="" class="cardImg" />
+          <div class="card-body">
+            <h5>Fancy Ladies Blazer</h5>
+            <p>Elegant white checked coat.</p>
+            <a href="#" class="btn btn-dark">Buy Now</a>
+            <a href="#" class="btn btn-outline-dark w-25 float-end"
+              ><img src="assets/images/cart.png" class="cart w-50"
+            /></a>
+          </div>
+        </div>
       </div>
-      <div class="col">
-       <div class="card">
-         <img src="assets/images/boots.jpg" alt="">
-         <div class="card-body">
-           <h5>Women's Boots</h5>
-           <p>Black knee high boots for winter.</p>
-           <a href="#" class="btn btn-dark">Buy Now</a>
-           <a href="#" class="btn btn-outline-dark float-end">Add to Cart</a>
-         </div>
-       </div>
+      <div class="col w-25 col-lg-4 col-md-4 mx-2">
+        <div class="card">
+          <img src="assets/images/boots.jpg" alt="" class="cardImg" />
+          <div class="card-body">
+            <h5>Women's Boots</h5>
+            <p>Black knee high boots for winter.</p>
+            <a href="#" class="btn btn-dark">Buy Now</a>
+            <a href="#" class="btn btn-outline-dark w-25 float-end"
+              ><img src="assets/images/cart.png" class="cart w-50"
+            /></a>
+          </div>
+        </div>
       </div>
-      <div class="col">
-       <div class="card">
-         <img src="assets/images/headphones.jpg" alt="">
-         <div class="card-body">
-           <h5>Headphones</h5>
-           <p>White wireless over ear headphones.</p>
-           <a href="#" class="btn btn-dark">Buy Now</a>
-           <a href="#" class="btn btn-outline-dark float-end">Add to Cart</a>
-         </div>
-       </div>
+      <div class="col w-25 col-lg-4 col-md-4 mx-2">
+        <div class="card">
+          <img src="assets/images/headphones.jpg" alt="" class="cardImg" />
+          <div class="card-body">
+            <h5>Headphones</h5>
+            <p>White wireless over ear headphones.</p>
+            <a href="#" class="btn btn-dark">Buy Now</a>
+            <a href="#" class="btn btn-outline-dark w-25 float-end"
+              ><img src="assets/images/cart.png" class="cart w-50"
+            /></a>
+          </div>
+        </div>
       </div>
-      <div class="col">
-       <div class="card">
-         <img src="assets/images/lighting.jpg" alt="">
-         <div class="card-body">
-           <h5>Wall Lighting</h5>
-           <p>Light in antique gold with clear & amber glass</p>
-           <a href="#" class="btn btn-dark">Buy Now</a>
-           <a href="#" class="btn btn-outline-dark float-end">Add to Cart</a>
-         </div>
-       </div>
+      <div class="col w-25 col-lg-4 col-md-4 mx-2">
+        <div class="card">
+          <img src="assets/images/lighting.jpg" alt="" class="cardImg" />
+          <div class="card-body">
+            <h5>Wall Lighting</h5>
+            <p>Light in antique gold with clear & amber glass</p>
+            <a href="#" class="btn btn-dark">Buy Now</a>
+            <a href="#" class="btn btn-outline-dark w-25 float-end"
+              ><img src="assets/images/cart.png" class="cart w-50"
+            /></a>
+          </div>
+        </div>
       </div>
-      <div class="col">
-       <div class="card">
-         <img src="assets/images/eyepalette.jpg.crdownload" alt="">
-         <div class="card-body">
-           <h5>Eyeshadow Palette</h5>
-           <p>Nudes of New York dynamic eyeshadow palette.</p>
-           <a href="#" class="btn btn-dark">Buy Now</a>
-           <a href="#" class="btn btn-outline-dark float-end">Add to Cart</a>
-         </div>
-       </div>
+      <div class="col w-25 col-lg-4 col-md-4 mx-2">
+        <div class="card">
+          <img src="assets/images/eyeshadepalette.jpg" alt="" class="cardImg" />
+          <div class="card-body">
+            <h5>Eyeshadow Palette</h5>
+            <p>Nudes of New York dynamic eyeshadow palette.</p>
+            <a href="#" class="btn btn-dark">Buy Now</a>
+            <a href="#" class="btn btn-outline-dark w-25 float-end"
+              ><img src="assets/images/cart.png" class="cart w-50"
+            /></a>
+          </div>
+        </div>
       </div>
     </div>
 
-    
-    
-    
-    <!-- <div class="row my-3 d-flex justify-content-center mx-0">
-      <div class="card m-1 col-3">
-        <div class="card-body">
-          <img src="assets/images/menwear3.jpg" alt="" class="card-img-top"/>
-          <h5 class="m-1 mt-2">Men's Denim Shirt</h5>
-          <p>Navy Stretch Denim Urban Shirt</p>
-          <a href="#" class="btn btn-dark">Buy Now</a>
+    <!-- Pagination -->
+    <nav>
+      <ul class="pagination" aria-label="Page navigation example">
+        <li class="page-item"><a class="page-link" aria-label="Previous" href=""><span aria-hidden="true"> &laquo; </span></a></li>
+        <li class="page-item"><a class="page-link" href=""> 1 </a></li>
+        <li class="page-item"><a class="page-link" href=""> 2 </a></li>
+        <li class="page-item"><a class="page-link" href=""> 3 </a></li>
+        <li class="page-item"><a class="page-link" aria-label="Next" href=""><span aria-hidden="true"> &raquo; </span></a></li>
+      </ul>
+    </nav>
+
+    <!-- Part 2 -->
+    <h4 class="cardsHeading">Top Picks</h4>
+    <div
+      class="row row-cols-1 row-cols-3 g-4 mt-3 mx-2 d-flex justify-content-center"
+    >
+      <div class="col w-25 col-lg-4 col-md-4 mx-2">
+        <div class="card">
+          <img src="assets/images/menwear4.jpeg" alt="" class="cardImg" />
+          <div class="card-body">
+            <h5>Men's Denim Shirt</h5>
+            <p>Navy stretch denim urban shirt</p>
+            <a href="#" class="btn btn-dark">Buy Now</a>
+            <a href="#" class="btn btn-outline-dark w-25 float-end"
+              ><img src="assets/images/cart.png" class="cart w-50"
+            /></a>
+          </div>
         </div>
       </div>
-      <div class="card m-1 col-3">
-        <div class="card-body">
-          <img src="assets/images/womenwear2.jpeg" alt="" class="w-100"/>
-          <h5 class="m-1 mt-2">Women's Wear</h5>
-          <p>Shop the widest collection for women at the biggest discounts. Choose from a top range of casual ,ethnic and western styles.</p>
-          <a href="#" class="btn btn-dark">Shop Now</a>
+      <div class="col w-25 col-lg-4 col-md-4 mx-2">
+        <div class="card">
+          <img src="assets/images/womenwear2.jpeg" alt="" class="cardImg" />
+          <div class="card-body">
+            <h5>Fancy Ladies Blazer</h5>
+            <p>Elegant white checked coat.</p>
+            <a href="#" class="btn btn-dark">Buy Now</a>
+            <a href="#" class="btn btn-outline-dark w-25 float-end"
+              ><img src="assets/images/cart.png" class="cart w-50"
+            /></a>
+          </div>
         </div>
       </div>
-      <div class="card m-1 col-3">
-        <div class="card-body">
-          <img src="assets/images/watch.jpg" alt="" class="w-100"/>
-          <h5 class="m-1 mt-2">Watches</h5>
-          <p>Choose from a variety of smartwatches, sports watches, chronograph, analogue and digital watches or shop by material.</p>
-          <a href="#" class="btn btn-dark">Shop Now</a>
+      <div class="col w-25 col-lg-4 col-md-4 mx-2">
+        <div class="card">
+          <img src="assets/images/boots.jpg" alt="" class="cardImg" />
+          <div class="card-body">
+            <h5>Women's Boots</h5>
+            <p>Black knee high boots for winter.</p>
+            <a href="#" class="btn btn-dark">Buy Now</a>
+            <a href="#" class="btn btn-outline-dark w-25 float-end"
+              ><img src="assets/images/cart.png" class="cart w-50"
+            /></a>
+          </div>
         </div>
       </div>
-      <div class="card m-1 col-3">
-        <div class="card-body">
-          <img src="assets/images/womenwear2.jpeg" alt="" class="w-100"/>
-          <h5 class="m-1 mt-2">Women's Wear</h5>
-          <p>Shop the widest collection for women at the biggest discounts. Choose from a top range of casual ,ethnic and western styles.</p>
-          <a href="#" class="btn btn-dark">Shop Now</a>
+      <div class="col w-25 col-lg-4 col-md-4 mx-2">
+        <div class="card">
+          <img src="assets/images/headphones.jpg" alt="" class="cardImg" />
+          <div class="card-body">
+            <h5>Headphones</h5>
+            <p>White wireless over ear headphones.</p>
+            <a href="#" class="btn btn-dark">Buy Now</a>
+            <a href="#" class="btn btn-outline-dark w-25 float-end"
+              ><img src="assets/images/cart.png" class="cart w-50"
+            /></a>
+          </div>
         </div>
       </div>
-      <div class="card m-1 col-3">
-        <div class="card-body">
-          <img src="assets/images/footwear.jpg" alt="" class="w-100"/>
-          <h5 class="m-1 mt-2">Footwear</h5>
-          <p>Choose from a variety of smartwatches, sports watches, chronograph, analogue and digital watches or shop by material.</p>
-          <a href="#" class="btn btn-dark">Shop Now</a>
+      <div class="col w-25 col-lg-4 col-md-4 mx-2">
+        <div class="card">
+          <img src="assets/images/lighting.jpg" alt="" class="cardImg" />
+          <div class="card-body">
+            <h5>Wall Lighting</h5>
+            <p>Light in antique gold with clear & amber glass</p>
+            <a href="#" class="btn btn-dark">Buy Now</a>
+            <a href="#" class="btn btn-outline-dark w-25 float-end"
+              ><img src="assets/images/cart.png" class="cart w-50"
+            /></a>
+          </div>
         </div>
       </div>
-      <div class="card m-1 col-3">
-        <div class="card-body">
-          <img src="assets/images/menwear2.jpg" alt="" class="w-100"/>
-          <h5 class="m-1 mt-2">Men's Wear</h5>
-          <p>Shop the largest branded collection for Men from Allen Solly, Levis, Van Heusen, Peter England, Levis, USPA, Puma & more.</p>
-          <a href="#" class="btn btn-dark">Shop Now</a>
+      <div class="col w-25 col-lg-4 col-md-4 mx-2">
+        <div class="card">
+          <img src="assets/images/eyeshadepalette.jpg" alt="" class="cardImg" />
+          <div class="card-body">
+            <h5>Eyeshadow Palette</h5>
+            <p>Nudes of New York dynamic eyeshadow palette.</p>
+            <a href="#" class="btn btn-dark">Buy Now</a>
+            <a href="#" class="btn btn-outline-dark w-25 float-end"
+              ><img src="assets/images/cart.png" class="cart w-50"
+            /></a>
+          </div>
         </div>
-    </div> -->
+      </div>
     </div>
+    <!-- Pagination -->
+    
+
+    <!-- ----  CARDS END  ---- -->
+
+    <!-- ----  FOOTER START  ---- -->
+
+    <footer>
+      <div class="footer">
+        <div class="footerRight">
+          <img
+            src="assets/images/logo_e-commerce.png"
+            alt=""
+            class="footerLogo"
+          />
+          <h5 class="footerText">
+            Copyright © 2023 H&M. All rights reserved.
+            <a href="">Privacy and Policy</a>
+          </h5>
+          <p class="footerPara col-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+            voluptas. Modi, laudantium reiciendis. Nemo delectus vel, saepe
+            exercitationem laboriosam vitae?
+          </p>
+        </div>
+
+        <div class="footerLeft">
+          <div class="float-end">
+            <p>+00 1234 5678</p>
+            <p>+00 8765 4321</p>
+            <img src="assets/images/facebook.png" alt="" class="footerIcons" />
+            <img src="assets/images/instagram.png" alt="" class="footerIcons" />
+            <img src="assets/images/twitter.png" alt="" class="footerIcons" />
+            <img src="assets/images/facebook.png" alt="" class="footerIcons" />
+            <img src="assets/images/instagram.png" alt="" class="footerIcons" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ----  FOOTER END  ---- -->
 
     <!-- BOOTSTRAP JAVASCRIPT -->
     <script src="assets/lib/bootstrap/script.js"></script>
