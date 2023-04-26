@@ -350,10 +350,13 @@ nav ul li:hover > .submenu {
   background-color: var(--brown);
   padding: 2rem;
   margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footerLogo {
-  width: 3%;
+  width: 4%;
 }
 
 .footerIcons {
@@ -373,8 +376,9 @@ nav ul li:hover > .submenu {
 
 .footerLeft {
   position: relative !important;
-  top: 0 !important;
+  bottom: 0 !important;
 }
+
 
 
 /* ---- FOOTER END  ---- */
