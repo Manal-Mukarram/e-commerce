@@ -75,7 +75,7 @@ html, body {
   transition: all 0.3s linear;
   color: rgb(119, 10, 10);
   border-radius: 6px;
-  background-color: wheat;
+  background-color: rgb(255, 245, 227);
 }
 
 .inup:hover {
@@ -355,14 +355,6 @@ nav ul li:hover > .submenu {
   align-items: center;
 }
 
-.footerLeft {
-
-}
-
-.footerRight {
-  
-}
-
 .footerLogo {
   width: 10%;
   padding-bottom: 0.5rem;
@@ -370,7 +362,7 @@ nav ul li:hover > .submenu {
 
 .footerIcons {
  width: 2rem;
- aspect-ratio: 1/1;
+ aspect-ratio: 2/2;
  filter: invert(100%);
 }
 
@@ -384,16 +376,12 @@ nav ul li:hover > .submenu {
 
 .footerText {
   color: white;
-  font-size: small;
-}
-
-.footerPara {
-  color: #d3d3d3;
+  font-size: smaller;
 }
 
 .footerTitle {
   color: white;
-  font-size: medium;
+  font-size: small;
 }
 
 .footerAnchor {
@@ -402,10 +390,19 @@ nav ul li:hover > .submenu {
 
 .footerInput {
   background-color: rgba(255, 255, 255, 0);
-  border: 0px solid;    /*  removes border of input boxes  */
-  outline: none;       /*  removes outline of input boxes  */
+  border: 0px solid;                      /*  removes border of input boxes  */
+  outline: none;                          /*  removes outline of input boxes  */
   border-bottom: 1px solid rgba(255, 255, 255, 0.453);
-  caret-color: rgba(255, 255, 255, 0.749);
+  caret-color: rgba(255, 255, 255, 0.749); /* changes the color of caret */
+  color: white;
+}
+
+.footerInput::placeholder{
+  color: rgba(255, 254, 254, 0.606);
+}
+
+.footerInput, select, textarea{
+  color: #ffffff;
 }
 
 /*  https://copy-paste-css.com/  */
