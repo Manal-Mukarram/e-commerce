@@ -11,6 +11,7 @@
     <!-- CSS FILES -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/orders.css" />
     <!-- FONTAWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <!-- GOOGLE FONTS -->
@@ -136,12 +137,15 @@
         </ul>
       </nav>
 
+      <!-- ----  NAVBAR END  ---- -->
+
+
       <!-- ----  ORDERS START  ---- -->
 
     <div class="container">
      <div class="orders">
       <div class="trackOrders">
-        <h3>Track Your Order</h3>
+        <h3 class="orderHeading">Track Your Order</h3>
         <div class="card w-25">
           <img src="assets/images/watch.jpg" class="" />
           <div class="card-body">
@@ -150,11 +154,8 @@
             <button class="btn btn-outline-dark">Order Details</button>
           </div>
         </div>
-        <div class="btn-group dropend">
-          <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">View Details</button>
-          <ul class="dropdown-menu">
-            <li class="dropdown-item"><img src="assets/images/clumsycart.png" alt=""></li>
-          </ul>
+        <div class="orderDetails">
+          <button type="button" class="btn dropdown-toggle viewDetails" data-bs-toggle="dropdown" aria-expanded="false">View Details</button>
         </div>
       </div>
 

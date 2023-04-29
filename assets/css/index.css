@@ -322,6 +322,7 @@ nav ul li:hover > .submenu {
   aspect-ratio: 2/2;
 }
 
+/* cardsHeading : to create horizontal lines across a heading */
 .cardsHeading {
   display: flex;
   flex-direction: row;

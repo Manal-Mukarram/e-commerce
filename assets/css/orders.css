@@ -7,3 +7,25 @@
 .trackimg {
   width: 20vw;
 }
+
+.orderHeading {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.5rem;
+}
+.orderHeading:before, .orderHeading:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+.orderHeading:before {
+  margin-right: 10px
+}
+.orderHeading:after {
+  margin-left: 10px
+}
+
+.viewDetails {
+  transform: rotate(270deg);
+}
