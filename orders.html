@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="stylesheet" href="assets/css/orders.css" />
     <!-- FONTAWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,16 +38,16 @@
     <link rel="stylesheet" href="assets/lib/bootstrap/style.css"">
     <!-- INTERNAL STYLE -->
     <style>
-        .wrapperr {
-          height: 100vh;
-          width: 100vw;
-          position: fixed;
-          z-index: -1;
-          background-image: url(assets/images/wcbg2.avif);
-          background-repeat: no-repeat;
-          background-size: cover;
-        }
-      </style>
+      .wrapperr {
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: -1;
+        background-image: url(assets/images/wcbg2.avif);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
   </head>
   <body>
     <div class="wrapperr"></div>
@@ -139,64 +142,135 @@
 
       <!-- ----  NAVBAR END  ---- -->
 
-
       <!-- ----  ORDERS START  ---- -->
 
-    <div class="container">
-     <div class="orders">
-      <div class="trackOrders">
-        <h3 class="orderHeading">Track Your Order</h3>
-        <div class="card w-25">
-          <img src="assets/images/watch.jpg" class="" />
-          <div class="card-body">
-            <h4 class="card-title">Timeless Elegance Watch</h4>
-            <p class="card-text">$289</p>
-            <button class="btn btn-outline-dark">Order Details</button>
+      <div class="container">
+        <div class="trackOrders">
+          <div class="orderCard">
+            <h3 class="orderHeading p-3">Track Your Order</h3>
+            <div class="card w-25">
+              <img src="assets/images/watch.jpg" class="" />
+              <div class="card-body">
+                <h4 class="card-title">Timeless Elegance Watch</h4>
+                <p class="card-text">$289</p>
+                <button class="btn btn-outline-dark">Order Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="viewDetails">
+            <button class="viewBtn btn">View Details</button>
           </div>
         </div>
-        <div class="orderDetails">
-          <button type="button" class="btn dropdown-toggle viewDetails" data-bs-toggle="dropdown" aria-expanded="false">View Details</button>
+
+        <div class="previous">
+          <h3 class="orderHeading p-3">View Your Previous Orders</h3>
+          <div class="row d-flex justify-content-around">
+            <div class="card w-25 col-sm-12 col-lg-4 col-md-4 col-12">
+              <img src="assets/images/watch.jpg" class="p-2" />
+              <div class="card-body">
+                <h4 class="card-title">Timeless Elegance Watch</h4>
+                <p class="card-text">$289</p>
+                <button class="btn btn-outline-dark">Order Details</button>
+                <button class="btn btn-dark float-end">Reorder</button>
+              </div>
+            </div>
+            <div class="card w-25 col-sm-12 col-lg-4 col-md-4 col-12">
+              <img src="assets/images/watch.jpg" class="p-2" />
+              <div class="card-body">
+                <h4 class="card-title">Timeless Elegance Watch</h4>
+                <p class="card-text">$289</p>
+                <button class="btn btn-outline-dark">Order Details</button>
+                <button class="btn btn-dark float-end">Reorder</button>
+              </div>
+            </div>
+            <div class="card w-25 col-sm-12 col-lg-4 col-md-4 col-12">
+              <img src="assets/images/watch.jpg" class="p-2" />
+              <div class="card-body">
+                <h4 class="card-title">Timeless Elegance Watch</h4>
+                <p class="card-text">$289</p>
+                <button class="btn btn-outline-dark">Order Details</button>
+                <button class="btn btn-dark float-end">Reorder</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="previousOrders">
-        <h3>View Your Previous Orders</h3>
-        <div class="row d-flex justify-content-around">
-          <div class="card w-25 col-sm-12 col-lg-4 col-md-4 col-12">
-            <img src="assets/images/watch.jpg" class="p-2" />
-            <div class="card-body">
-              <h4 class="card-title">Timeless Elegance Watch</h4>
-              <p class="card-text">$289</p>
-              <button class="btn btn-outline-dark">Order Details</button>
-              <button class="btn btn-outline-dark float-end">Order Again</button>
-            </div>
-          </div>
-          <div class="card w-25 col-sm-12 col-lg-4 col-md-4 col-12">
-            <img src="assets/images/watch.jpg" class="p-2" />
-            <div class="card-body">
-              <h4 class="card-title">Timeless Elegance Watch</h4>
-              <p class="card-text">$289</p>
-              <button class="btn btn-outline-dark">Order Details</button>
-              <button class="btn btn-outline-dark">Order Again</button>
-            </div>
-          </div>
-          <div class="card w-25 col-sm-12 col-lg-4 col-md-4 col-12">
-            <img src="assets/images/watch.jpg" class="p-2" />
-            <div class="card-body">
-              <h4 class="card-title">Timeless Elegance Watch</h4>
-              <p class="card-text">$289</p>
-              <button class="btn btn-outline-dark">Order Details</button>
-              <button class="btn btn-outline-dark">Order Again</button>
-            </div>
-          </div>
-        </div>
-      </div>
-     </div>
-    </div>
-
-    <i class="fa-solid fa-cart-circle-check"></i>
 
       <!-- ----  ORDERS END  ---- -->
 
+      <!-- ----  FOOTER START  ---- -->
+
+      <footer>
+        <div class="footer">
+          <!-- Footer Right -->
+          <div class="footerRight col-5">
+            <img
+              src="assets/images/logo_e-commerce.png"
+              alt=""
+              class="footerLogo"
+            />
+            <h5 class="footerText">
+              Copyright © 2023 H&M. All rights reserved.
+              <a href="" class="footerAnchor">Privacy and Policy</a>
+            </h5>
+            <p class="footerText">
+              Discover the ultimate online shopping destination! We are
+              passionate about providing our customers with a seamless and
+              enjoyable shopping experience, from start to finish. Our diverse
+              selection of top-quality products, user-friendly website, and
+              fast, reliable shipping ensure that you will always find what you
+              need, when you need it.
+            </p>
+          </div>
+
+          <!-- Footer Mid -->
+          <div class="footerMid col-4 mt-4">
+            <h5 class="footerTitle">Lets stay connected!</h5>
+            <p class="text-light footerText">
+              Looking for regular updates, exclusive content, and insider
+              information? Subscribe to our mailing list now! Don't miss out on
+              the latest news and special offers. Join our community today.
+            </p>
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="footerInput p-2"
+            />
+            <button class="btn btn-light footerButton btn-sm" type="button">
+              Subscribe
+            </button>
+          </div>
+
+          <!-- Footer Left -->
+          <div class="footerLeft">
+            <div class="">
+              <h5 class="footerTitle">Contact Us</h5>
+              <p class="text-light">+00 1234 56789</p>
+              <p class="text-light">+00 9876 54321</p>
+              <h5 class="footerTitle pt-2">Follow Us</h5>
+              <img
+                src="assets/images/facebook.png"
+                alt=""
+                class="footerIcons"
+              />
+              <img src="assets/images/twitter.png" alt="" class="footerIcons" />
+              <img
+                src="assets/images/facebook.png"
+                alt=""
+                class="footerIcons"
+              />
+              <img
+                src="assets/images/instagram.png"
+                alt=""
+                class="footerIcons"
+              />
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- ----  FOOTER END  ---- -->
+
+    </div>
   </body>
 </html>
